@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../../../ejtos-react_budget_app/src/context/AppContext';
 
 const AllocationForm = (props) => {
     const { dispatch,remaining  } = useContext(AppContext);
