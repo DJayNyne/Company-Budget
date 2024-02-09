@@ -1,12 +1,14 @@
+// App.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { AppProvider } from './context/AppContext';
+import { AppProvider } from '../../ejtos-react_budget_app/src/context/AppContext';
 import Budget from './components/Budget';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
+import CurrencySelector from './components/CurrencySelector';
 
 const App = () => {
     return (
@@ -14,6 +16,9 @@ const App = () => {
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                 <div className='row mt-3'>
+                    <div className='col-sm'>
+                        <CurrencySelector />
+                    </div>
                     <div className='col-sm'>
                         <Budget />
                     </div>
@@ -33,7 +38,7 @@ const App = () => {
                 <h3 className='mt-3'>Change allocation</h3>
                 <div className='row mt-3'>
                     <div className='col-sm'>
-                        <AllocationForm/>
+                        <AllocationForm />
                     </div>
                 </div>
             </div>
