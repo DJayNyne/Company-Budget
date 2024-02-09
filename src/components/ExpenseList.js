@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ExpenseItem from './ExpenseItem';
-import { AppContext } from '../../../ejtos-react_budget_app/src/context/AppContext';
+import { AppContext } from '../../../Company-Budget/src/context/AppContext';
 
 const ExpenseList = () => {
     const { expenses } = useContext(AppContext);
