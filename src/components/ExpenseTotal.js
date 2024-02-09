@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AppContext } from '../../../ejtos-react_budget_app/src/context/AppContext';
+import { AppContext } from '../../../CompanyBudget/src/context/AppContext';
 const ExpenseTotal = () => {
     const { expenses } = useContext(AppContext);
     const totalExpenses = expenses.reduce((total, item) => {
